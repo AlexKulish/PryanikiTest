@@ -56,15 +56,79 @@
 		599260ED283F8FA10092DD02 /* PryanikiTest */ = {
 			isa = PBXGroup;
 			children = (
-				599260EE283F8FA10092DD02 /* AppDelegate.swift */,
-				599260F0283F8FA10092DD02 /* SceneDelegate.swift */,
-				599260F2283F8FA10092DD02 /* ViewController.swift */,
-				599260F4283F8FA10092DD02 /* Main.storyboard */,
-				599260F7283F8FA30092DD02 /* Assets.xcassets */,
-				599260F9283F8FA30092DD02 /* LaunchScreen.storyboard */,
-				599260FC283F8FA30092DD02 /* Info.plist */,
+				59926105283F90320092DD02 /* Controllers */,
+				59926104283F902A0092DD02 /* ViewModels */,
+				59926103283F901E0092DD02 /* Models */,
+				59926109283F90F50092DD02 /* Helpers */,
+				59926108283F90C10092DD02 /* Services */,
+				59926107283F904C0092DD02 /* Storyboards */,
+				59926106283F90390092DD02 /* Resources */,
+				59926102283F8FF50092DD02 /* SupportFiles */,
 			);
 			path = PryanikiTest;
+			sourceTree = "<group>";
+		};
+		59926102283F8FF50092DD02 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				599260EE283F8FA10092DD02 /* AppDelegate.swift */,
+				599260F0283F8FA10092DD02 /* SceneDelegate.swift */,
+				599260FC283F8FA30092DD02 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		59926103283F901E0092DD02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59926104283F902A0092DD02 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		59926105283F90320092DD02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				599260F2283F8FA10092DD02 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		59926106283F90390092DD02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				599260F7283F8FA30092DD02 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59926107283F904C0092DD02 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				599260F9283F8FA30092DD02 /* LaunchScreen.storyboard */,
+				599260F4283F8FA10092DD02 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		59926108283F90C10092DD02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		59926109283F90F50092DD02 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4XK5S24922;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PryanikiTest/Info.plist;
+				INFOPLIST_FILE = PryanikiTest/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +383,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4XK5S24922;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PryanikiTest/Info.plist;
+				INFOPLIST_FILE = PryanikiTest/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

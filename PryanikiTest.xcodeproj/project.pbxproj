@@ -14,6 +14,7 @@
 		599260F8283F8FA30092DD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599260F7283F8FA30092DD02 /* Assets.xcassets */; };
 		599260FB283F8FA30092DD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599260F9283F8FA30092DD02 /* LaunchScreen.storyboard */; };
 		5992610B283F920D0092DD02 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5992610A283F920D0092DD02 /* .gitignore */; };
+		5992610D283F94780092DD02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992610C283F94780092DD02 /* DataModel.swift */; };
 		61C520F0C0DF696B2DBDB684 /* Pods_PryanikiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3B3BB8BA633B1BC1E71F62 /* Pods_PryanikiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		599260FA283F8FA30092DD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		599260FC283F8FA30092DD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5992610A283F920D0092DD02 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		5992610C283F94780092DD02 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		5A89326AEAABFF990EB675D2 /* Pods-PryanikiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTest.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTest/Pods-PryanikiTest.release.xcconfig"; sourceTree = "<group>"; };
 		5C3B3BB8BA633B1BC1E71F62 /* Pods_PryanikiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7B1D135993F86E7F07BA44 /* Pods-PryanikiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTest.debug.xcconfig"; path = "Target Support Files/Pods-PryanikiTest/Pods-PryanikiTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		59926103283F901E0092DD02 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5992610C283F94780092DD02 /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,7 +158,6 @@
 				BE7B1D135993F86E7F07BA44 /* Pods-PryanikiTest.debug.xcconfig */,
 				5A89326AEAABFF990EB675D2 /* Pods-PryanikiTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -276,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				599260F3283F8FA10092DD02 /* ViewController.swift in Sources */,
+				5992610D283F94780092DD02 /* DataModel.swift in Sources */,
 				599260EF283F8FA10092DD02 /* AppDelegate.swift in Sources */,
 				599260F1283F8FA10092DD02 /* SceneDelegate.swift in Sources */,
 			);

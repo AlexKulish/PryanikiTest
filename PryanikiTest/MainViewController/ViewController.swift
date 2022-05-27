@@ -27,9 +27,14 @@ class ViewController: UIViewController {
         configureCollectionView()
         setupConstraints()
         configureUpdateDelegate()
+        setupNavigationBar()
     }
     
     // MARK: - Private methods
+    
+    private func setupNavigationBar() {
+        title = "Pryaniki Test Project"
+    }
     
     private func showAlert(with name: String){
         let alert = UIAlertController(title: "Объект", message: name, preferredStyle: .alert)

@@ -19,8 +19,6 @@ protocol MainViewModelProtocol {
     func setDelegate(delegate: UpdateDelegate)
 }
 
-
-
 class MainViewModel: MainViewModelProtocol {
     
     internal var dataBlock: [DataBlock] = []

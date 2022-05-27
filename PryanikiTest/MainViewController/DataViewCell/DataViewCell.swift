@@ -9,7 +9,11 @@ import UIKit
 
 class DataViewCell: UICollectionViewCell {
     
+    // MARK: - Public properties
+    
     var selectorHandler: ((_ index: Int) -> Void)?
+    
+    // MARK: - Private properties
     
     private lazy var titleLabel: UILabel = {
        let label = UILabel()
@@ -37,6 +41,8 @@ class DataViewCell: UICollectionViewCell {
         return segmentedControl
     }()
     
+    // MARK: - Initializers
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
@@ -48,6 +54,8 @@ class DataViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Public methods
     
     func configure(with dataBlock: DataBlock) {
         switch dataBlock.name {
@@ -64,6 +72,8 @@ class DataViewCell: UICollectionViewCell {
             imageView.isHidden = false
         }
     }
+    
+    // MARK: Private methods
     
     private func addSubviews() {
         addSubview(titleLabel)

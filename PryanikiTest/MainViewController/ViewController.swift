@@ -13,9 +13,13 @@ protocol UpdateDelegate: AnyObject {
 
 class ViewController: UIViewController {
     
+    // MARK: - Private properties
+    
     private let cellID = "cell"
     private var collectionView: UICollectionView!
     private var viewModel: MainViewModelProtocol!
+    
+    // MARK: - Life Cycles Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,8 @@ class ViewController: UIViewController {
         setupConstraints()
         configureUpdateDelegate()
     }
+    
+    // MARK: - Private methods
     
     private func showAlert(with name: String){
         let alert = UIAlertController(title: "Объект", message: name, preferredStyle: .alert)

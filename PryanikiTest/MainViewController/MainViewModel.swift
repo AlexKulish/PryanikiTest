@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - Protocol
+
 protocol MainViewModelProtocol {
     var dataBlock: [DataBlock] { get }
     var views: [String] { get }
@@ -19,12 +21,18 @@ protocol MainViewModelProtocol {
     func setDelegate(delegate: UpdateDelegate)
 }
 
+// MARK: - Class
+
 class MainViewModel: MainViewModelProtocol {
+    
+    // MARK: - Internal properties
     
     internal var dataBlock: [DataBlock] = []
     internal var views: [String] = []
     internal var dictOfData: [String : DataBlock] = [:]
     internal weak var updateDelegate: UpdateDelegate?
+    
+    // MARK: - Initializers
     
     init() {
         fetchData { [unowned self] in
@@ -33,8 +41,9 @@ class MainViewModel: MainViewModelProtocol {
         }
     }
     
+    // MARK: - Public methods
+    
     func fetchData(completion: @escaping () -> Void) {
-        
         DispatchQueue.main.async {
             NetworkManager.shared.fetchData { dataModel in
                 self.dataBlock = dataModel.data
@@ -57,5 +66,4 @@ class MainViewModel: MainViewModelProtocol {
     func setDelegate(delegate: UpdateDelegate) {
         self.updateDelegate = delegate
     }
-    
 }

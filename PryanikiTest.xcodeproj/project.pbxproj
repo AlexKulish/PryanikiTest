@@ -15,6 +15,9 @@
 		599260FB283F8FA30092DD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599260F9283F8FA30092DD02 /* LaunchScreen.storyboard */; };
 		5992610B283F920D0092DD02 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5992610A283F920D0092DD02 /* .gitignore */; };
 		5992610D283F94780092DD02 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992610C283F94780092DD02 /* DataModel.swift */; };
+		5992610F283F9A510092DD02 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992610E283F9A510092DD02 /* NetworkManager.swift */; };
+		59926116283FC2990092DD02 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59926115283FC2990092DD02 /* MainViewModel.swift */; };
+		5992611C2840BF300092DD02 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992611B2840BF300092DD02 /* UIImageView+Ext.swift */; };
 		61C520F0C0DF696B2DBDB684 /* Pods_PryanikiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3B3BB8BA633B1BC1E71F62 /* Pods_PryanikiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		599260FC283F8FA30092DD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5992610A283F920D0092DD02 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		5992610C283F94780092DD02 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5992610E283F9A510092DD02 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		59926115283FC2990092DD02 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5992611B2840BF300092DD02 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		5A89326AEAABFF990EB675D2 /* Pods-PryanikiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTest.release.xcconfig"; path = "Target Support Files/Pods-PryanikiTest/Pods-PryanikiTest.release.xcconfig"; sourceTree = "<group>"; };
 		5C3B3BB8BA633B1BC1E71F62 /* Pods_PryanikiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PryanikiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7B1D135993F86E7F07BA44 /* Pods-PryanikiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PryanikiTest.debug.xcconfig"; path = "Target Support Files/Pods-PryanikiTest/Pods-PryanikiTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,8 +81,7 @@
 		599260ED283F8FA10092DD02 /* PryanikiTest */ = {
 			isa = PBXGroup;
 			children = (
-				59926105283F90320092DD02 /* Controllers */,
-				59926104283F902A0092DD02 /* ViewModels */,
+				59926114283FC2690092DD02 /* MainViewController */,
 				59926103283F901E0092DD02 /* Models */,
 				59926109283F90F50092DD02 /* Helpers */,
 				59926108283F90C10092DD02 /* Services */,
@@ -106,21 +111,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		59926104283F902A0092DD02 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		59926105283F90320092DD02 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				599260F2283F8FA10092DD02 /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		59926106283F90390092DD02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +131,7 @@
 		59926108283F90C10092DD02 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5992610E283F9A510092DD02 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -148,8 +139,18 @@
 		59926109283F90F50092DD02 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5992611B2840BF300092DD02 /* UIImageView+Ext.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		59926114283FC2690092DD02 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				599260F2283F8FA10092DD02 /* ViewController.swift */,
+				59926115283FC2990092DD02 /* MainViewModel.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		89AD0704ABABD4BBF92B864F /* Pods */ = {
@@ -279,8 +280,11 @@
 			files = (
 				599260F3283F8FA10092DD02 /* ViewController.swift in Sources */,
 				5992610D283F94780092DD02 /* DataModel.swift in Sources */,
+				5992610F283F9A510092DD02 /* NetworkManager.swift in Sources */,
+				5992611C2840BF300092DD02 /* UIImageView+Ext.swift in Sources */,
 				599260EF283F8FA10092DD02 /* AppDelegate.swift in Sources */,
 				599260F1283F8FA10092DD02 /* SceneDelegate.swift in Sources */,
+				59926116283FC2990092DD02 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

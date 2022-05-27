@@ -12,7 +12,6 @@ class DataViewCell: UICollectionViewCell {
     let titleLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20)
-        label.text = "Decoding error"
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

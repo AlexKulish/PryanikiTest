@@ -32,9 +32,6 @@ class MainViewModel: MainViewModelProtocol {
         fetchData { [unowned self] in
             self.updateDelegate?.didUpdate(sender: self)
             fillTheDict()
-            print(dictOfData)
-            print(dataBlock)
-            print(views)
         }
     }
     
